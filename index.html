@@ -34,6 +34,8 @@ var url = {
 }
 $(document).ready(function() {
 
+  $('#contentView').load(url['url0']);
+
   $('.nav-link').on('click', function () {
     $('#contentView').load(url['url'+ $(this).data('index')]);
   });
