@@ -24,6 +24,18 @@
   <link href="css/agency.min.css" rel="stylesheet">
 
   <script src="vendor/jquery/jquery.min.js"></script>
+
+
+<script>
+
+var url = {
+  url0: './pages/home.html',
+  url1: './pages/research.html',
+}
+$(document).ready(function() {
+   $('#contentView').load(url.url0);
+});
+</script>
 </head>
 
 <body id="page-top">
@@ -39,118 +51,32 @@
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav text-uppercase ml-auto">
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="index.html">Home</a>
+            <a class="nav-link js-scroll-trigger" data-index="0" href="#">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="pages/research.html">Reasearch</a>
+            <a class="nav-link js-scroll-trigger" data-index="1" href="#">Reasearch</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="pages/people.html">People</a>
+            <a class="nav-link js-scroll-trigger" data-index="2" href="#">People</a>
           </li>
           <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="pages/contact.html">Contact</a>
+              <a class="nav-link js-scroll-trigger" href="#">Contact</a>
           </li>  
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="pages/courses.html">Courses</a>
+            <a class="nav-link js-scroll-trigger" href="#">Courses</a>
           </li>
           <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="pages/news.html">News</a>
+              <a class="nav-link js-scroll-trigger" href="#">News</a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <!-- Header -->
-  <header class="masthead">
-    <div class="container">
-      <div class="intro-text">
-        <div class="intro-heading text-uppercase">HAHN LABORATORY</div>
-        <!--
-        <div id="headerSubText" class="">
-            <p>With a clear vision to our near future</p>
-            <p>we strive to pioneer in cognitive psychology</p>
-            <p>to better understand how we perceive upcoming technology</p>
-        </div>
-        -->
-      </div>
-    </div>
-  </header>
+  <div id="contentView">
+    <!-- content -->
 
-
-  <!-- About -->
-  <section class="page-section" id="about">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 text-center">
-          <h2 class="section-heading text-uppercase">About us</h2>
-          <h3 class="section-subheading text-muted">What do we do?</h3>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-12">
-          <ul class="timeline">
-            <li class="timeline-inverted">
-              <div class="timeline-image">
-                <img class="rounded-circle img-fluid" src="img/about/1.jpg" alt="">
-              </div>
-              <div class="timeline-panel">
-                <div class="timeline-heading">
-                  <h4>2009-2011</h4>
-                  <h4 class="subheading">Our Humble Beginnings</h4>
-                </div>
-                <div class="timeline-body">
-                  <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                </div>
-              </div>
-            </li>
-            <li class="timeline-inverted">
-              <div class="timeline-image">
-                <img class="rounded-circle img-fluid" src="img/about/2.jpg" alt="">
-              </div>
-              <div class="timeline-panel">
-                <div class="timeline-heading">
-                  <h4>March 2011</h4>
-                  <h4 class="subheading">An Agency is Born</h4>
-                </div>
-                <div class="timeline-body">
-                  <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                </div>
-              </div>
-            </li>
-            <li class="timeline-inverted">
-              <div class="timeline-image">
-                <img class="rounded-circle img-fluid" src="img/about/3.jpg" alt="">
-              </div>
-              <div class="timeline-panel">
-                <div class="timeline-heading">
-                  <h4>December 2012</h4>
-                  <h4 class="subheading">Transition to Full Service</h4>
-                </div>
-                <div class="timeline-body">
-                  <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                </div>
-              </div>
-            </li>
-            <li class="timeline-inverted">
-              <div class="timeline-image">
-                <img class="rounded-circle img-fluid" src="img/about/4.jpg" alt="">
-              </div>
-              <div class="timeline-panel">
-                <div class="timeline-heading">
-                  <h4>July 2014</h4>
-                  <h4 class="subheading">Phase Two Expansion</h4>
-                </div>
-                <div class="timeline-body">
-                  <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                </div>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
+  </div>
 
 
   <!-- Footer -->
