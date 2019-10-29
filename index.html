@@ -33,7 +33,11 @@ var url = {
   url1: './pages/research.html',
 }
 $(document).ready(function() {
-   $('#contentView').load(url.url0);
+
+  $('.nav-link').on('click', function () {
+    $('#contentView').load(url['url'+ $(this).data('index')]);
+  });
+  
 });
 </script>
 </head>
